@@ -19,6 +19,10 @@ const menu = {
     }
   }
 }
-menu.meal = 'Chicken with Honey Sauce';
-menu.price = 25;
+const randomMeal = (mealArray) => {
+  let randomNumber = Math.floor(Math.random() * 3);
+  return mealArray[randomNumber];
+}
+menu.meal = randomMeal(['Chicken with Honey Sauce', 'The Best Shawarma', 'Juicy Khinkali']);
+menu.price = Math.floor(Math.random() * 100);
 console.log(menu.todaysSpecial)
