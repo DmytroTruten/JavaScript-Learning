@@ -1,4 +1,5 @@
 // Returns whether or not the provided string contains a substring of "cake" in it.
+// https://stackoverflow.com/questions/1789945/how-to-check-whether-a-string-contains-a-substring-in-javascript
 function containsCake(string) {
   if(string.includes('cake')) {
     return true;
