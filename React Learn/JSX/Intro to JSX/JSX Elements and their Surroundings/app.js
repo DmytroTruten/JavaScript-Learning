@@ -1,1 +1,0 @@
-const myArticle = <article></article>
