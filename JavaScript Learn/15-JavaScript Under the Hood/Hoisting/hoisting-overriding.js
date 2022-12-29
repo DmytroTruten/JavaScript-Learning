@@ -10,6 +10,8 @@
 //   console.log(2)
 // }
 
+// Subsequent function declarations override previous ones
+
 foo() // 3
 
 function foo() {
