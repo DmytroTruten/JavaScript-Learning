@@ -11,3 +11,30 @@ const robot = {
   }
 };
 console.log(robot.energyLevel)
+
+let myObject = {
+  get a() {
+    return 2
+  }
+}
+
+Object.defineProperty(myObject, "b", {
+  get: function () {
+    return this.a * 2
+  }
+})
+
+console.log(myObject.a) // 2
+console.log(myObject.b) // 4
+
+let myObject1 = {
+  get a() {
+    return this._a_
+  },
+  set a(val) {
+    this._a_ = val * 2;
+  }
+}
+
+myObject1.a = 2
+console.log(myObject1.a) // 4
